@@ -69,17 +69,20 @@ React es muy útil cuando queremos construir rápidamente la primera versión fu
 MVP (Minimum Viable Product - Producto Mínimo Viable): se refiere a construir funcionalidades pequeñas que sean completas para que podamos lanzarla y medir su impacto y decidir si seguir ese camino o probar otra cosa.
 
 Hay que escoger el problema más crucial que debe resolver la aplicación.
-MVP
-Flujos de trabajo para aplicaciones web
+![imagen](https://user-images.githubusercontent.com/83564327/205417237-17580f1a-77f8-41c7-b8ef-8733320f27f4.png)
+
+### Flujos de trabajo para aplicaciones web
 
 Existen dos flujos de trabajo para crear aplicaciones web profesionalmente.
 1. Modelo en cascada
+![imagen](https://user-images.githubusercontent.com/83564327/205417246-63caa40c-2b00-49bc-9c44-c6d36cdf99cc.png)
 
 Cada equipo tiene un tiempo para hacer todo su respectivo trabajo para construir una aplicación.
 
 Por ejemplo: el equipo de diseño diseña la aplicación, el de desarrollo programa todo lo diseñado y finalmente se lanza la app recogiendo el feedback de los usuarios y se vuelve a empezar tomando en cuenta lo dicho por los usuarios.
 
 Es problemático porque el esfuerzo puede ser en vano porque no se tiene un feedback hasta que se termina de construir la app.
+
 Modelo en Cascada
 2. Modelo del ciclo MVP iterativo
 
