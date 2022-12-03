@@ -59,6 +59,7 @@ En este curso, Juan David Castro, course director en la facultad de
 computer science de Platzi te acompañará mientras aprendes los temas 
 esenciales de React, desde la teoría hasta la práctica.
 
+## Cuándo usar React.js
 
 Para saber cuándo usar React es necesario conocer el tipo de proyecto que estás desarrollando. Conociendo los alcances actuales y los futuros, podrás tener un panorama completo de las necesidades que vas a cubrir y cuáles son las funciones básicas que debe tener para ser un MVP.
 
