@@ -158,4 +158,3 @@ Además, si quieres conocer un poco más a fondo la filosofía y principios de d
 
     ⚠️ Si apenas estás empezando tu ruta de aprendizaje con React.js, no tienes que preocuparte por nada de esto. Todas las herramientas se actualizan constantemente, igual que los cursos de Platzi. Esa es la norma y el día a día en el mundo de la tecnología. Más adelante comprenderás la importancia y lo divertido de todas estas actualizaciones.
 
-¡Ahora sí! ¡Te espero en la siguiente clase para crear nuestra primera aplicación con React.js! 💪
