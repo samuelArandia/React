@@ -101,3 +101,58 @@ Componentes: son la forma de estructurar las piezas de nuestra página web para 
 Los componentes pueden trabajar de manera independiente a los demás, pero con React todos los componentes tienen una conexión con el resto de componentes, para que en conjunto puedan reaccionar al comportamiento de los usuarios.
 
 Comportamiento: cómo actúan nuestros componentes con las interacciones de los usuarios.
+
+### Cambios en React 
+
+React 18 fue publicado el 29 de marzo de 2022. Sus cambios más importantes van a ayudar muchísimo para optimizar el render e hidratación de aplicaciones o componentes de React en el DOM. El más importante, crucial y significativo fue la migración de ReactDOM.render a ReactDOM.createRoot.
+
+En la próxima clase vamos a usar Create React App, una de las herramientas más populares para instalar un entorno de desarrollo con React.js de forma muy rápida. No hay absolutamente ningún problema si decides usar React 18. Solo ten en consideración los cambios para hacer el render principal de tu aplicación.
+Migración de ReactDOM.render a ReactDOM.createRoot
+
+Antes de React 18:
+
+      const root = document.getElementById('root');
+      ReactDOM.render(e(LikeButton), root);
+
+Desde React 18:
+
+      const rootElement = document.getElementById('root');
+      const root = ReactDom.createRoot(rootElement);
+      root.render(e(LikeButton));
+
+Antes de React 18:
+
+     ReactDOM.render(
+       <React.StrictMode>
+         <App />
+       </React.StrictMode>,
+       document.getElementById('root')
+     );
+
+Desde React 18:
+
+     const rootElement = document.getElementById('root');
+     const root = ReactDom.createRoot(rootElement);
+
+    root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    );
+
+Actualizaciones de React
+
+En los siguientes recursos puedes estudiar más a detalle los cambios de React y ReactDOM en su versión 18:
+
+    <a href="https://platzi.com/blog/react-conf-2021/">React Conf 2021: anuncios, cambios y el futuro de React.js</a>
+    <a href="https://github.com/facebook/react/blob/main/CHANGELOG.md">CHANGELOG de React</a>
+    React 18 is now available on npm!
+    How to Upgrade to React 18
+
+Además, si quieres conocer un poco más a fondo la filosofía y principios de diseño de React para elegir cómo hacer sus actualizaciones, te recomiendo tomar la siguiente clase:
+
+    Filosofía y principios de diseño en React
+
+    ⚠️ Si apenas estás empezando tu ruta de aprendizaje con React.js, no tienes que preocuparte por nada de esto. Todas las herramientas se actualizan constantemente, igual que los cursos de Platzi. Esa es la norma y el día a día en el mundo de la tecnología. Más adelante comprenderás la importancia y lo divertido de todas estas actualizaciones.
+
+¡Ahora sí! ¡Te espero en la siguiente clase para crear nuestra primera aplicación con React.js! 💪
