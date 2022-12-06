@@ -147,8 +147,10 @@ En los siguientes recursos puedes estudiar más a detalle los cambios de React y
 <a href="https://platzi.com/blog/react-conf-2021/">-React Conf 2021: anuncios, cambios y el futuro de React.js</a>
 
 <a href="https://github.com/facebook/react/blob/main/CHANGELOG.md">-CHANGELOG de React</a>
-React 18 is now available on npm!
-How to Upgrade to React 18
+
+<a href="https://reactjs.org/blog/2022/03/29/react-v18.html">-React 18 is now available on npm!</a>
+
+<a href="https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html">-How to Upgrade to React 18</a>
 
 Además, si quieres conocer un poco más a fondo la filosofía y principios de diseño de React para elegir cómo hacer sus actualizaciones, te recomiendo tomar la siguiente clase:
 
