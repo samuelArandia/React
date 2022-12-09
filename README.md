@@ -210,54 +210,54 @@ Crear un componente con clases
 
 Este es el modo que se empleaba antes, ahora ya casi nadie la utiliza, pero es bueno saber cómo funciona, por si llegamos a trabajar con proyectos que las usen, con el método render podemos renderizar el JSX que retorna nuestra clase.
 
-class Componente extends React.Component {
-	render() {
-		return (
-		    // JSX
-		)
-	}
-} 
+	class Componente extends React.Component {
+		render() {
+			return (
+			    // JSX
+			)
+		}
+	} 
 
 Podemos agregar JSX entre los paréntesis del return.
 Crear un componente con funciones
 
 Los componentes funcionales son los más utilizados hoy en día, ya que nos permiten controlar el ciclo de vida mucho más fácil con los hooks de React:
 
-function Component() {
-    return (
-        // JSX
-    )
-} 
+		function Component() {
+		    return (
+			// JSX
+		    )
+		} 
 
-// Utilizando arrow function
-const Component = () => {
-    return(
-        // JSX
-    )
-}
+		// Utilizando arrow function
+		const Component = () => {
+		    return(
+			// JSX
+		    )
+		}
 
-Componentes vs. Elementos
+### Componentes vs. Elementos
 
 Los componentes son invisibles para HTML, pero no para React, de hecho React utiliza los componentes para renderizar, y optimizar los re-renderizados.
 Componente
 
 Un componente es una pieza de código que describe una parte reutilizable de la interfaz, recibe propiedades y retornan elementos, dentro de los componentes podemos utilizar variables de JavaScript con ayuda de las llaves {}.
 
-const Component = () => {
-    const titulo = Soy un título;
-    
-    return(
-        <h1>{titulo}</h1>
-    )
-}
+	const Component = () => {
+	    const titulo = Soy un título;
 
-Elemento
+	    return(
+		<h1>{titulo}</h1>
+	    )
+	}
+
+### Elemento
 
 Un elemento es lo que devuelve un componente, es una representación de un nodo en el DOM.
 
-<h1>Soy un título</h1>
+	<h1>Soy un título</h1>
 
-Propiedades vs. Atributos
+### Propiedades vs. Atributos
 
 La diferencia principal es que un atributo no se puede modificar y una propiedad si, ya que los atributos son de HTML y las propiedades son de JavaScript.
 Atributo
@@ -271,48 +271,50 @@ Propiedad
 
 Las propiedades las pueden recibir los elementos y componentes en React.
 
-const Component = () => {
-    return(
-        <h1 className="titulo">
-            Soy un titulo
-        </h1>
-    )
-}
+	const Component = () => {
+	    return(
+		<h1 className="titulo">
+		    Soy un titulo
+		</h1>
+	    )
+	}
 
 Es importante notar que algunos atributos de HTML se escriben diferente como propiedades, por ejemplo; el atributo class de HTML no se debe utilizar como propiedad de una clase o elemento de React, ya que class es una palabra reservada para crear clases en JavaScript, en su lugar utilizamos className.
-Pasando propiedades a nuestros componentes
+
+
+### Pasando propiedades a nuestros componentes
 
 Algo mágico de React es que podemos pasarle propiedades a nuestros componentes.
 
-// Le pasamos la propiedad saludo
-<Componente saludo="Oli" />
+		// Le pasamos la propiedad saludo
+		<Componente saludo="Oli" />
 
-const Componente = (props) => {
-    // Recibimos las propiedades
+		const Componente = (props) => {
+		    // Recibimos las propiedades
 
-    return(
-        {/* ¡Así creamos un comentario en JSX! */}
-        {/* Accedemos a saludo desde las props */}
-        <h1 className="titulo">
-            {props.saludo} 
-            {/* props.saludo = Oli */}
-        </h1>
-    )
-}
+		    return(
+			{/* ¡Así creamos un comentario en JSX! */}
+			{/* Accedemos a saludo desde las props */}
+			<h1 className="titulo">
+			    {props.saludo} 
+			    {/* props.saludo = Oli */}
+			</h1>
+		    )
+		}
 
-Propiedad children
+### Propiedad children
 
 También podemos utilizar los componentes de React como etiquetas abiertas, para pasarle contenido, elementos o incluso otros componentes, la manera de acceder a ellos es con la propiedad especial children.
 
-<Componente>
-    <h1>¡Soy un título anidado!</h1>
-</Componente>
+		<Componente>
+		    <h1>¡Soy un título anidado!</h1>
+		</Componente>
 
-const Componente = (props) => {
-    return(
-        <div className="titulo">
-            {props.children}
-            {/* props.children = <h1>¡Soy un título anidado!</h1> */}
-        </div>
-    )
-}
+		const Componente = (props) => {
+		    return(
+			<div className="titulo">
+			    {props.children}
+			    {/* props.children = <h1>¡Soy un título anidado!</h1> */}
+			</div>
+		    )
+		}
