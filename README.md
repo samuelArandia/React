@@ -267,7 +267,7 @@ Los atributos los pueden tener las etiquetas de HTML.
     <!-- Por ejemplo el atributo class -->
     <h1 class="titulo">Soy un título</h1>
 
-Propiedad
+### Propiedad
 
 Las propiedades las pueden recibir los elementos y componentes en React.
 
